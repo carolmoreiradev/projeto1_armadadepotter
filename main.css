@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+h1 a,
+h2,
+h3,
+.container nav li a,
+section .container img{
+    color:darkgoldenrod;
+    font-family: "Bigelow Rules", serif;
+    font-weight: none;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #06163d, #000000);
+    font-size: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    margin-right:auto;
+    padding: 16px;
+    font-size: 70px;
+}
+
+.container nav li{
+    display: inline;
+    padding: 8px;
+}
+
+.container nav li a:hover{
+    text-shadow: 0 0 16px #eeeeee, 0 0 16px #eeeeee;
+    transition: 0.5s;
+}
+
+.container nav li a,
+h1 a{
+    text-decoration: none;
+}
+
+header .container img{
+    width: 100px;
+    margin: 8px 0;
+}
+
+#borda-inferior{
+    position: absolute;
+    bottom: 0;
+    width: 1280px;
+    height: 2px;
+    margin: 0;
+    background-image: linear-gradient(to right, #eeeeee, darkgoldenrod, darkgoldenrod, #eeeeee);
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #06163d, #000000, #000000);
+    color: #eeeeee;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: none;
+    text-align: justify;
+}
+
+#saga,
+#characters,
+#author,
+#contact{
+    padding: 48px;
+    padding-top: 150px;
+}
+
+h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section .container img{
+    width: 450px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+section .hp,
+section .jkr{
+    margin-right: 32px;
+}
+
+section .personagens{
+    margin-left: 32px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: none;
+    color: darkgoldenrod;
+    margin-bottom: 8px;
+}
+
+#saga button,
+#characters button,
+#author button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-top: 16px;
+    padding: 0;
+    border-radius: 2px;
+}
+
+#saga button:hover,
+#characters button:hover,
+#author button:hover{
+    color: #eeeeee;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.social-links img{
+    height: 36px;
+    border-radius: 5px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 12px;
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+#contact{
+    display:block;
+}
+
+#contact h2{
+    padding-left: 184px;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-around;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+#contact button{
+    color: #000000;
+    background-color: darkgoldenrod;
+    font-weight: 500;
+    border: none;
+}
+
+#contact button:hover{
+    color: #eeeeee;
+    background-color: #06163d;
+    cursor: pointer;
+}
+
+form textarea{
+    resize: none;
+    height: 120px;
+}
+
+.hogwarts img{
+    z-index: -1;
+    position:absolute;
+    width:100%;
+    top: 2340px;
+    opacity: 0.4;
+}
+
+.warning{
+    background-color: #000000;
+    display: flex;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 16px;
+    border: 2px;
+    border-style: solid;
+}
+
+.warning a{
+    color: darkgoldenrod;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer{
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+}
