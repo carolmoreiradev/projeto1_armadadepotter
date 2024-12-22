@@ -17,7 +17,7 @@
     <header>
         <div class="container">
             <img src="./Imagens/hp.png" alt="Logo Harry Potter"/>
-            <h1><a href="#saga">Armada de Potter</a></h1>
+            <h1><a href="#index">Armada de Potter</a></h1>
                 <nav>
                     <ul>
                         <li><a href="#saga">A Saga</a></li>
@@ -29,8 +29,9 @@
                 <div id="borda-inferior"></div>
         </div>
     </header>
-    <main>
+    <main id="index">
     <section id="saga">
+        <div class="saga">
         <div class="container">
             <img class="hp" src="./Imagens/saga.jpg" alt="Livros do Harry Potter e óculos" />
             <div>
@@ -42,10 +43,11 @@
                 <button type="submit">Saiba mais</button>
             </div>
         </div>
+        </div>
     </section>
     <section id="characters">
         <div class="container">
-            <div>
+            <div class="characters">
                 <h2>Personagens</h2>
                 <h3>Harry Potter</h3>
                 <p>
@@ -58,7 +60,7 @@
             </div>
             <img class="personagens" src="./Imagens/personagens.jpg" alt="Hermione Granger, Harry Potter e Rony Weasley">
         </div>
-    <div>
+    <div class="characters">
         <h3>Ronald Weasley</h3>
         <p>
             Ronald Abílio Weasley, mais conhecido como Rony, é um bruxo inglês sangue puro nascido em 1 de março de 1980 e o sexto filho de Arthur e Molly Weasley. Ele também é o irmão mais novo de Gui, Carlinhos, Percy, Fred e Jorge e o irmão mais velho de Gina. Rony cresceu junto de seus irmãos n'A Toca, pelos arredores de Ottery St. Catchpole em Devon. Rony começou a frequentar a Escola de Magia e Bruxaria de Hogwarts em 1991, sendo classificado para a Casa Grifinória. Ele rapidamente se tornou o melhor amigo de Harry Potter e Hermione Granger, efrentando muitos desafios na adolescência. Juntos, eles formaram o trio de ouro.
@@ -67,7 +69,7 @@
     </div>
     </section>
     <section id="author">
-        <div class="container">
+        <div class="container" class="author">
             <img class="jkr" src="./Imagens/jkr.jpg" alt="J.K. Rowling" />
             <div>
                 <h2>A autora</h2>
@@ -81,7 +83,7 @@
         </div>
     </section>
     <section id="contact">
-        <div>
+        <div class="contact">
             <h2>Contato</h2>
             <div class="contact-methods">
                 <div>
@@ -131,6 +133,6 @@
     <footer>
         <p>&copy;Harry Potter - Todos os direitos reservados - 2024</p>
     </footer>
-</body>
+    <script src="./main.js"></script>
 </body>
 </html>
