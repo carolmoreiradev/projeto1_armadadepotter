@@ -185,12 +185,6 @@ form button{
     border: none;
 }
 
-#contact button:hover{
-    color: #eeeeee;
-    background-color: #06163d;
-    cursor: pointer;
-}
-
 form textarea{
     resize: none;
     height: 120px;
