@@ -129,10 +129,13 @@ h3{
 
 #saga button:hover,
 #characters button:hover,
-#author button:hover{
+#author button:hover,
+form button:hover{
     color: #eeeeee;
     background-color: #000000;
+    border: solid 1px #eeeeee;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .social-links img{
@@ -151,6 +154,7 @@ h3{
 
 #contact{
     display:block;
+    max-height: 647px;
 }
 
 #contact h2{
@@ -174,17 +178,11 @@ form button{
     font-size: 16px;
 }
 
-#contact button{
+form button{
     color: #000000;
     background-color: darkgoldenrod;
     font-weight: 500;
     border: none;
-}
-
-#contact button:hover{
-    color: #eeeeee;
-    background-color: #06163d;
-    cursor: pointer;
 }
 
 form textarea{
@@ -194,9 +192,9 @@ form textarea{
 
 .hogwarts img{
     z-index: -1;
-    position:absolute;
+    position: absolute;
     width:100%;
-    top: 2340px;
+    top: 2355px;
     opacity: 0.4;
 }
 
@@ -221,4 +219,17 @@ footer{
     padding: 12px;
     font-size: 14px;
     text-align: center;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#saga,
+#characters,
+#author,
+#contact{
+    opacity: 1;
+    animation: fadeIn 1s ease-in;
 }
