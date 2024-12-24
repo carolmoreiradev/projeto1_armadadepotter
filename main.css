@@ -21,6 +21,7 @@ header{
     width: 100%;
     background-image: linear-gradient(to bottom right, #06163d, #000000);
     font-size: 40px;
+    z-index: 1;
 }
 
 .container{
@@ -95,13 +96,21 @@ section .container img{
     border-radius: 15px;
 }
 
-section .hp,
-section .jkr{
+.hp,
+.jkr{
     margin-right: 32px;
 }
 
-section .personagens{
+.personagens{
     margin-left: 32px;
+}
+
+.hp:hover,
+.personagens:hover,
+.jkr:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #eeeeee;
+    transition: 0.5s;
 }
 
 h3{
@@ -109,32 +118,6 @@ h3{
     font-weight: none;
     color: darkgoldenrod;
     margin-bottom: 8px;
-}
-
-#saga button,
-#characters button,
-#author button{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000000;
-    background-color: darkgoldenrod;
-    width: 100px;
-    height: 30px;
-    border: none;
-    margin-top: 16px;
-    padding: 0;
-    border-radius: 2px;
-}
-
-#saga button:hover,
-#characters button:hover,
-#author button:hover{
-    color: #eeeeee;
-    background-color: #000000;
-    border: solid 1px #eeeeee;
-    cursor: pointer;
-    transition: 0.5s;
 }
 
 .social-links img{
@@ -153,6 +136,7 @@ h3{
 
 #contact{
     display:block;
+    max-height: 647px;
 }
 
 #contact h2{
@@ -176,24 +160,42 @@ form button{
     font-size: 16px;
 }
 
-#contact button{
-    color: #000000;
-    background-color: darkgoldenrod;
-    font-weight: 500;
-    border: none;
-}
-
-#contact button:hover{
-    margin-bottom: 6px;
-    color: #eeeeee;
-    background-color: #06163d;
-    border: solid 1px #eeeeee;
-    cursor: pointer;
-}
-
 form textarea{
     resize: none;
     height: 120px;
+}
+
+#saga button,
+#characters button,
+#author button,
+#contact button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-top: 16px;
+    padding: 0;
+    border-radius: 2px;
+}
+
+#contact button{
+    width: 320px;
+}
+
+#saga button:hover,
+#characters button:hover,
+#author button:hover,
+#contact button:hover{
+    color: #eeeeee;
+    background-color: #000000;
+    border: solid 1px #eeeeee;
+    box-shadow: 0 0 8px #eeeeee;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .hogwarts img{
@@ -232,10 +234,10 @@ footer{
     to {opacity: 1;}
 }
 
-.saga,
-.characters,
-.author,
-.contact-methods{
+#saga,
+#characters,
+#author,
+#contact{
     opacity: 1;
     animation: fadeIn 1s ease-in;
 }
